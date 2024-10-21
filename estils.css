@@ -1,0 +1,221 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffcc00;
+    transition: opacity 0.8s ease; /* Smooth transition for opacity */
+    opacity: 1; /* Initial opacity */
+}
+
+body.fade-out {
+    opacity: 0.1; /* Fade out */
+}
+
+.main-header {
+    background-color: rgb(46, 46, 46);
+    padding: 10px;
+    text-align: center;
+}
+
+.nav-header {
+    background-color: gray;
+    padding: 10px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.logo {
+    height: 80px;
+}
+
+header {
+    background-color: #404040;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+header nav {
+    text-align: center;
+}
+
+header nav a {
+    color: #ffcc00;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    background-color: white;
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.content-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 0; /* Optional: Reset any bottom padding */
+}
+
+.content-wrapper a {
+    color: orange;
+    text-decoration: none;
+}
+
+.content-wrapper a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+.content {
+    margin: 20px 0;
+    padding-bottom: 0; /* Reset bottom padding */
+}
+
+h1 {
+    color: #4127d6;
+    font-size: 24px;
+}
+
+.timestamp {
+    font-size: 14px;
+    color: gray;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.image-container {
+    text-align: center;
+}
+
+.content img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.content p {
+    line-height: 1.6;
+    color: #333;
+    text-align: justify; /* Justify the text */
+}
+
+.footer {
+    font-size: 14px;
+    color: gray;
+    text-align: center;
+    background-color: rgb(117, 8, 117);
+    color: #ffcc00;
+    width: 98%;
+    margin: 0 auto; /* Center the footer */
+    padding: 10px 0; /* Add some padding for aesthetics */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+    clear: both; /* Ensure the footer is below floated elements */
+}
+
+header, header nav {
+    transform: none;
+}
+
+.no-underline {
+    text-decoration: none; /* Removes the underline from links */
+    color: orange; /* Keeps the text color consistent with surrounding text */
+}
+
+.no-underline:hover {
+    text-decoration: underline; /* Optionally add underline on hover */
+    color: black; /* Optional: Change color on hover */
+}
+
+.cine {
+    background-image: url('img/icono-cine.png'); /* Path to your cine icon */
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 30px; /* Adjust padding to make room for the icon */
+    background-size: 20px 20px; /* Adjust the size of the icon */
+}
+
+.cine strong {
+    color: #009286; /* Change the title color to blue */
+    font-weight: bold;
+}
+
+.sunny {
+    float: right;
+    border: 2px solid rgb(233, 8, 8); /* Adds a border around the image */
+    border-radius: 10px;  /* Rounds the corners of the border */
+    margin-right: 150px;  /* Adjust this value to move the image to the left */
+    width: 800px;         /* Set the width to make the image smaller */
+    height: auto;         /* Maintain the aspect ratio */
+    transition: transform 0.5s ease; /* Smooth transition for the transform */
+}
+
+.sunny:hover {
+    border-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet) 1; /* Add rainbow colors to the border */
+    transform: scale(1.2);
+}
+
+.larcs { 
+    color: #066c89;
+}
+
+#loading-image {
+    display: none; /* Initially hidden */
+    position: fixed; /* Cover the entire screen */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8); /* Optional: white background */
+    justify-content: center; /* Center image horizontally */
+    align-items: center; /* Center image vertically */
+    opacity: 0; /* Initially transparent */
+    transition: opacity 0.5s ease; /* Fade in transition */
+}
+
+#loading-image.show {
+    display: flex; /* Show the loading image */
+    opacity: 1; /* Fade in */
+}
+
+nav {
+    margin-bottom: 20px;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333; /* Change to your desired color */
+}
+
+.tripulacio {
+    display: block; /* Ensures each element takes up the full width available */
+    margin-left: auto; /* Centers the element horizontally */
+    margin-right: auto; /* Centers the element horizontally */
+    width: 100px; /* Fixed width */
+    height: 160px; /* Fixed height */
+}
+
+.tripfoto {
+    padding-top: 5px;
+    margin: 0px;
+    text-align: center;
+    background-color: gray;
+    width: 150px;
+    margin-left: auto; 
+    margin-right: auto; 
+    text-decoration: none;
+    margin-top: 5px;
+}
+
+/* Add specificity for links inside tripfoto */
+.tripfoto a {
+    color: orange;
+    text-decoration: none;
+}
+.tripfoto a:hover {
+    color: white;
+    text-decoration: underline;
+}
